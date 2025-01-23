@@ -1,0 +1,532 @@
+@media screen and (max-width: 678px){
+
+    nav{
+        position: relative;
+        z-index: 1000;
+        background-color: white;
+        width: 100%;
+    }
+    
+        .menu{
+            position: absolute;
+            right: 0px;
+            height: 93vh;
+            top: 7vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translate(100%);
+            transition: transform 0.5s ease-in;
+            bottom: 0;
+            padding: 30px 10px 30px 40px;
+        }
+
+        .menu li{
+            position: relative;
+            left: -10px;
+        } 
+    
+        body{
+            overflow-x: hidden;
+            /* to avoid horizontal scrolling */
+        }
+    
+        .menu li{
+            opacity: 0;
+            /* to make links not visible at first */
+        }
+    
+        .burger{
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            left: 250px;
+
+        }
+    
+        /* transform the nav links back to position */
+        .nav-active{
+            transform: translate(0);
+        }
+        
+    
+    
+        /* Animate the navigation links one by one */
+    
+        @keyframes navLinkFade {
+            from{
+                opacity: 0;
+                transform: translateX(50px)
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    
+        /* toggle the lines */
+        .toggle .line1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+    
+        .toggle .line2{
+            opacity: 0;
+        }
+    
+        .toggle .line3{
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    
+    
+    /* .logo { */
+     
+    /* Home */
+
+    .home{
+        background-color: rgb(114, 101, 96);
+        height: 600px;
+        padding-top: 5rem;
+        width: 100%;
+        background: url(../Images/PicsArt_09-16-10.37.57.jpg);
+        background-size:cover;
+        background-position: left;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+        font-weight: lighter;
+    }
+    
+    .home .home-content{
+        width: 263px;
+        height: 505px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+        background-color: aliceblue;
+        opacity: 30%;
+        position: absolute;
+        left: 20px;
+        top: 90px;
+    }
+    
+    .home-content .text h1{
+        font-family: thisfont;
+        color: black;
+        font-size: 40px;
+        position: relative;
+        display: flex;
+        top: 85px;
+        left: -50px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .home button{
+        position: relative;
+        display: flex;
+        width: 200px;
+        height: 50px;
+        left: 50px;
+        top: 130px;
+        border-radius: 15px;
+        border: none;
+        background-color: transparent;
+        box-shadow: 12px 12px 16px 0 rgb(137, 138, 141), inset 0 0 0 0 transparent;
+        transition: box-shadow 200ms, transform 300ms cubic-bezier(.2,2,1,1);
+        
+    }
+    
+    .home button:hover{
+    color: rgb(207, 198, 215);
+    }
+    
+    .home button:active{
+     box-shadow: 0 0 0 transparent, inset 8px 8px 12px 0 rgb(137, 138, 141), inset -8px -8px 12px 0 rgb(226, 217, 210);
+     transform: scale(.9);
+    }
+    
+    
+    button .btn1{
+        position: relative;
+        top: 10px;
+        left: 55px;
+        font-size: 30px;
+        text-decoration: none;
+        font-family: myFont ;
+        color: rgb(23, 14, 46);
+       
+    }
+
+    /* about */
+
+.about img{
+    width: 400px;
+    height: 560px;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+}
+
+.about .aboutme{
+    position: absolute;
+    left: 25px;
+    top: 100px;
+    background-color: white;
+    opacity: 80%;
+    width: 260px;
+    height: 430px;
+}
+
+.aboutme h3{
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    font-family: thisfont;
+}
+.aboutme p{
+    font-family: myFont;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    left: 8px;
+    width: 250px;
+    text-align: center;
+    top: 50px;
+}
+
+.about .iconic{
+    position: absolute;
+    left: 95px;
+    top: 560px;
+    padding: 20px;
+    font-size: 8px;
+}
+
+.about .iconic .iconsticker .img1{
+    position: absolute;
+    top: 20px;
+    width: 90px;
+    height: 60px;
+    left: -10px;
+}
+
+.about .iconic .iconsticker .img2{
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 70px;
+    left: 75px;
+}
+
+.about .iconic .icons{
+    position: absolute;
+    top: 60px;
+}
+
+/* Services/contact */
+.services{
+    background-color: rgb(73, 73, 96);
+    width: 100%;
+    height: 180dvh;
+}
+
+.contact{
+    background-color: white;
+    width: 270px;
+    height: 200px;
+    border-radius: 15px;
+    position: absolute;
+    top: 970px;
+    left: 20px;
+}
+
+.contact .mee{
+    display: none;
+}
+
+.contact img{
+    width:100px;
+    height: 100px;
+    position: absolute;
+    top: 23px;
+    left: 20px;
+}
+
+.contact h1{
+    position: absolute;
+    top: -50px;
+    left: 70px;
+    color: #de4984;
+    font-family: thisfont;
+    font-size: 30px;
+}
+
+.contact .cv{
+    position: absolute;
+    top: 30px;
+    left: 130px;
+}
+
+.cv h3{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(38, 38, 115);
+}
+
+.cv .mycv{
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    width: 80px;
+    height: 20px;
+    background-color: rgb(250, 215, 248);
+    border: 5px 10px 5px 10px solid ;
+}
+.cv .mycv a{
+    text-decoration: none;
+    color: black;
+    font-family: myFont;
+}
+.contacts h5{
+    position: absolute;
+    top: 90px;
+    left: 130px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(38, 38, 115);
+}
+.contacts p{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    font-size: 8px;
+}
+
+.contacts .email{
+    position: absolute;
+    top: 145px;
+}
+
+
+.services .boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.services .boxes .box{
+    margin: 20px 0;
+    width: 270px;
+    height: 160px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgb(37, 36, 45);
+    cursor: default;
+    transition: all 0.4s ease;
+    
+}
+
+.services .boxes .bottom-box{
+    position: absolute;
+    top: 600px;
+    left: 2.3px;
+}
+
+.services .boxes .box p{
+    font-family: myFont;
+    text-decoration: none;
+    color:#fbfbfd;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+}
+
+.services .boxes .box .icon{
+    height: 30px;
+    width: 30px;
+    background: aliceblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color:  #2c2741;
+    margin: 0 auto 0px auto;
+    transition: all 0.4s ease;
+    position: relative;
+    top: -10px;
+    
+}
+
+.boxes .box:hover .icon{
+    background-color: #2c2741;
+    color: aliceblue;
+
+}
+
+.services .boxes .box .topic{
+    font-family: thisfont;
+    font-size: 20px;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover{
+    color: #de4984;
+    transition: all 0.4s ease;
+
+}
+
+.services .title{
+    position: absolute;
+    top: 70px;
+    font-family: thisfont;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+    left: 80px;
+}
+
+.backguess a{
+color: black;
+text-decoration: none;
+position: absolute;
+top: 30px;
+left: 20px;
+font-size: 12px;
+font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.backcol a{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 12px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    }
+
+ /* portfolio 2 adobe styling */
+ .adobe .backadobe a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 10px;
+    z-index: 200;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    left: 10px;
+    font-size: 10px;
+}
+
+.adobe .backadobe a:hover{
+    color: rgb(202, 196, 255);
+}
+
+
+.adobe .img1 img{
+    width: 100%;
+    position: relative;
+}
+
+.adobe .img2 img{
+    width: 100%;
+    position: absolute;
+    top: 220px;
+}
+
+.adobe .img3 img{
+    width: 170px;
+    position: absolute;
+    top: 426px;
+}
+
+.adobe .img4 img{
+    width: 100%;
+    position: absolute;
+    top: 535px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
