@@ -10,7 +10,7 @@
         .menu{
             position: absolute;
             right: 0px;
-            height: 91vh;
+            height: 93vh;
             top: 6.5vh;
             background-color: white;
             display: flex;
@@ -20,7 +20,7 @@
             transform: translate(100%);
             transition: transform 0.5s ease-in;
             bottom: 0;
-            padding: 70px 10px 60px 5px;
+            padding: 70px 10px 90px 45px;
         }
 
         .menu li{
